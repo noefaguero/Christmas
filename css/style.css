@@ -115,3 +115,166 @@ color: red;
 .nav__link:hover {
 color: red;
 }
+
+/* ASIDE */
+
+.aside {
+    width: 95%;
+    display: none;
+  }
+  
+  .aside__header {
+    font-size: 1.2em;
+  }
+  
+  .aside__text {
+    font-size: 0.9em;
+  }
+  
+  /* Aside cards */
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: solid 1px rgba(160, 160, 160, 0.3);
+    margin: 0 0 2em 0;
+  }
+  
+  .card__text {
+    padding: 1em 0.5rem 0em 0.5em;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card__encabezado {
+    font-size: 0.7em;
+    margin: 0;
+  }
+  
+  .card__fecha {
+    display: block;
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 0.6em;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    margin: 0.25rem 0 0.5rem 0;
+    text-transform: uppercase;
+  }
+  
+  .card__imagepeque,
+  .article__imagepeque {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -0.5rem;
+  }
+  
+  .card__image {
+    width: 100%;
+  }
+  
+  /* ARTICULOS MAIN */
+  
+  .articles {
+    width: 100%;
+  }
+  
+  .article {
+    padding: 1em 2em 1em 2em;
+    background: #ffffff;
+    border: solid 1px rgba(160, 160, 160, 0.3);
+    margin: 0rem 0 3em 0;
+    padding: 0rem 3rem 0.5rem;
+  }
+  
+  .article__header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+    margin-bottom: 2rem;
+  }
+  
+  .article__title {
+    display: none;
+    padding: 0 0 1em 1em;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .article__h2 {
+    font-size: 1.5em;
+    color: #646464;
+  }
+  
+  .article__p {
+    font-size: 0.7em;
+  }
+  
+  .article__data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-left: solid 1px rgba(160, 160, 160, 0.3);
+    width: 30%;
+    margin: 2rem 0;
+    display: none;
+  }
+  
+  .article__date {
+    color: #3c3b3b;
+    display: block;
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 0.7em;
+    font-weight: 800;
+    letter-spacing: 0.25em;
+    margin-top: 2em;
+    text-transform: uppercase;
+  }
+  
+  .article__autor {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    margin-top: 0.6rem;
+  }
+  
+  .article__name {
+    margin-right: 0.6rem;
+    letter-spacing: 0.2rem;
+  }
+  
+  .article__body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .article__image {
+    max-width: 100%;
+    display: none;
+  }
+  
+  .article__text {
+    text-transform: none;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.01rem;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .article__footer {
+    display: none;
+    justify-content: flex-end;
+  }
+  
+  .article__footer-text {
+    border-left: solid 1px rgba(160, 160, 160, 0.3);
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 0.7em;
+    letter-spacing: 0.25em;
+    margin-left: 2rem;
+    padding-left: 2rem;
+    text-transform: uppercase;
+  }
