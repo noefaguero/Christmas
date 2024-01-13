@@ -1,0 +1,183 @@
+/* FAVORITOS */
+
+/* imagen bola de navidad */
+.superior__img {
+  position: fixed;
+  top: 55px;
+  right: 5px;
+  width: 60px;
+  display: none;
+  filter: grayscale(0%);
+}
+
+.favorites {
+  width: 700px;
+  position: absolute;
+  top: 0;
+  left: -800px;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Raleway, Helvetica, sans-serif;
+  color: #646464;
+  font-size: 0.75rem;
+  padding-top: 2rem;
+}
+
+.favorites__img {
+  width: 100%;
+  height: 130px;
+}
+
+.favorites__footertext {
+  position: relative;
+  top: -30px;
+  text-align: center;
+  border-top: solid 1px rgba(160, 160, 160, 0.3);
+  border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+  color: rgb(128, 128, 128);
+  color: red;
+  font-size: 1.15rem;
+  font-variant: small-caps;
+  margin: 0;
+  padding: 0.25rem;
+}
+
+.favorites__images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.favorites__text {
+  position: relative;
+  top: 0;
+  padding-top: 0.25rem 0.5rem 0;
+  font-size: 0.9em;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(11, 11, 11);
+  transition: all 0.8s ease;
+  opacity: 0;
+}
+
+/* SLIDERS */
+.favorites__container:hover .favorites__textup {
+  top: -45%;
+  color: red;
+  opacity: 1;
+  font-weight: bold;
+}
+
+.favorites__container:hover .favorites__img {
+  filter: grayscale(85%) sepia(15%);
+  transform: scale(1);
+}
+
+.favorites__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.25rem;
+}
+
+/* ANIMACIONES */
+.showfavorites {
+  animation-name: showfavorites;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showfavorites {
+  0% {
+    top: 50px;
+    left: -800px;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 50px;
+    left: 300px;
+    opacity: 1;
+  }
+}
+
+.hidefavorites {
+  animation-name: hidefavorites;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hidefavorites {
+  0% {
+    top: 50px;
+    left: 300px;
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    top: 50px;
+    left: -800px;
+    opacity: 0;
+  }
+}
+
+.showcontainer {
+  animation-name: showcontainer;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showcontainer {
+  from {
+    top: 0;
+  }
+
+  to {
+    top: 225px;
+  }
+}
+
+.hidecontainer {
+  animation-name: hidecontainer;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hidecontainer {
+  from {
+    top: 225px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
+.movesuperior {
+  animation-name: movesuperior;
+  animation-duration: 0.1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 6;
+}
+
+@keyframes movesuperior {
+  0% {
+    transform: translateX(2px);
+  }
+
+  to {
+    transform: translateX(-2px);
+  }
+}
